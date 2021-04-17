@@ -1,0 +1,88 @@
+body {
+  min-height: 100vh;
+  background-color: #eee;
+}
+.header {
+  text-align: center;
+  font-size: 22px;
+  padding: 30px;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.form-wrapper form {
+  border: 1px solid #eee;
+  padding: 5px 10px;
+  background-color: #fff;
+  width: 600px;
+  display: flex;
+  border-radius: 5px;
+}
+.form-wrapper input {
+  flex: 1;
+  border: none;
+}
+.form-wrapper input:focus {
+  outline: none;
+}
+.form-wrapper button {
+  border: none;
+  background-color: transparent;
+}
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding: 5px 20px;
+}
+.todo-listitem {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  border-bottom: 1px solid;
+  margin: 0;
+}
+.todo-listitem > span {
+  flex: 1;
+  letter-spacing: 0.6px;
+}
+.todo-listitem .completed {
+  text-decoration: line-through;
+}
+.todo-listitem button {
+  border: 1px solid;
+  border-radius: 6px;
+}
+button {
+  opacity: 0.7;
+  padding: 2px 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+button#delete {
+  color: red;
+}
+button#completed {
+  color: green;
+}
+button:hover {
+  opacity: 1;
+}
+.clear-all-section {
+  width: 600px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 5px;
+}
+button:focus {
+  outline: none;
+}
